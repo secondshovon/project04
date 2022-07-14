@@ -1,0 +1,695 @@
+*{margin: 0;
+padding: 0;
+}
+a{
+text-decoration: none;
+}
+li{
+list-style: none;
+}
+body{
+font-family: 'Mukta', sans-serif;
+}
+/**************************
+* header section design
+***********************/
+
+/*topbar section design*/
+header{
+width: 100%;
+}
+.topbar{
+width: 100%;
+/*background-color: red;*/
+padding: 40px 0;
+background-color: white;
+/*main section theke always
+padding newa better*/
+/*.topbar margin kore,background
+color black korlei difference ta
+bojha jabe */
+border-bottom: 1px solid #e5e7edad;
+}
+.container{
+width: 1140px;
+margin: 0 auto;
+/*background-color: white;*/
+}
+.topbar-content{
+display: flex;
+justify-content: space-between;
+}
+.topbar-search{
+flex-basis: 30%;
+}
+.topbar-icon{
+flex-basis: 30%;
+text-align: right;
+}
+.logo{
+	flex-basis: 40%;
+	text-align: center;
+}
+
+.logo a{
+text-transform: uppercase;
+color: #25262A;
+font-size: 20px;
+font-weight: 300;
+letter-spacing: 4px;
+border: 2px solid #25262A;
+padding: 4px 14px;
+/*margin-top: 20px;*/
+}
+.topbar-icon a {
+color: #868995;
+margin-left: 12px;
+/*magrin- left theke space newar
+cause holo contain er left side
+theke space nibe and container er
+right sidegheshe align thakbe  */
+position: relative;
+}
+
+.topbar-icon a:hover{
+color: #25262a;
+}
+.topbar a p{
+	position: absolute;
+    font-size: 10px;
+    top: -16px;
+    right: -18px;
+    color: white;
+    width: 20px;
+    height: 20px;
+    text-align: center;
+    line-height: 20px;
+    border-radius: 100%;
+    background-color: #7971ea;
+    transition: .4s;
+}
+.topbar a p:hover{
+	top: -20px;
+    transition: .4s;
+    background-color: #5a50e5;
+}
+.topbar-search input{
+font-size: 16px;
+padding:12px;
+border: none;
+transition: 0.6s;
+
+}
+.topbar-search input:focus{
+outline: none;
+padding-left: 4px;
+transition: 0.6s;
+}
+
+.topbar-search{
+color: #868995;
+}
+/*topbar section design end */
+
+
+/*main menu section design*/
+
+.main-menu{
+text-align: center;
+padding: 16px 0;
+/*background-color: red;*/
+}
+.main-menu li{
+display: inline-block;
+padding: 0 14px;
+}
+.main-menu li a{
+font-size: 16px;
+text-transform: uppercase;
+font-weight: 300;
+letter-spacing: 2px;
+color: black;
+}
+.main-menu li a:hover{
+	color: #5a50e5;
+}
+
+/*main menu section design end*/
+
+/**************************
+* banner section design
+***********************/
+.banner{
+width: 100%;
+background-image: url(../images/banner.png);
+background-repeat: no-repeat;
+background-size: cover ;
+background-position: center;
+background-attachment: scroll;/*fixed*/
+padding: 150px 0px;
+}
+.banner-content{
+display: flex;
+}
+.left{
+flex-basis: 60%;
+}
+.right{
+flex-basis: 40%;
+}
+.right h1{
+font-size: 50px;
+color: black;
+font-weight: bold ;
+line-height: 1;
+margin-bottom:20px ;
+}
+.right p{
+font-size: 20px;
+line-height:35px ;
+font-weight: 300;
+color: #333333;
+margin-bottom:20px ;
+}
+.right button{
+color:white ;
+padding: 14px 24px;
+background-color:#7971ea ;
+border-color:#7971ea;
+border: none;
+letter-spacing: 1px;
+border-radius: 4px;
+font-size: 14px ;
+font-weight: 300;
+transition: 0.5s;
+text-transform: uppercase;
+}
+.right button:hover{
+box-shadow: 0 5px 20px -7px rgba(0,0,0,.9)!important;
+background-color: #5a50e5;
+/*transform: translateY(-4px);*/
+/*/ top: -2px*/
+/*u can also use margin top: -4px
+but eta use korle ashe pasher element
+gulo movement kore tai transform use
+kora hoy */
+/*margin-top: -4px;*/
+transition: 0.5s;
+cursor: pointer;
+}
+
+/**************************
+* about section design
+***********************/
+
+.about{
+width: 100%;
+padding: 60px 0;
+border-bottom: 1px solid #e5e7edad;
+}
+.about-content{
+display: grid;
+grid-template-columns: auto auto auto;
+column-gap: 20px;
+}
+.items{
+display: flow-root;
+}
+.icon{
+color: #7971ea;
+float: left ;
+width: 20%;
+}
+.icon i{
+font-size: 42px;
+}
+.content{
+float: right;
+width: 80%;
+}
+.content h5{
+font-size: 18px;
+letter-spacing: 1px;
+color: #25262a;
+}
+.content p{
+line-height: 1.7;
+color: #8c92a0;
+font-weight: 300;
+font-size: 16px;
+}
+
+/**************************
+* category section design
+***********************/
+
+.category{
+width: 100%;
+padding: 100px 0;
+}
+.category-content{
+display: grid;
+grid-template-columns: auto auto auto;
+column-gap: 32px;
+}
+.c-item img{
+/*max-width: 100%;*/
+/*heading tag h6 and h5 rakhle
+max-width 100% dilei pic gulo
+align hobe otherwise h6 and h5 rakhle
+width define kore dite hobe */
+height: auto;
+width: 358px;
+/*check width with inspect*/
+vertical-align: middle;
+/*vertical-align dile niche je small white
+border dekha jay ta remove hoeye jabe*/
+transition: 0.3s;
+/*object-fit: cover;*/
+}
+.c-item{
+position: relative;
+overflow: hidden;
+/*cursor: pointer;*/
+/*image hover korle bahire jototuku
+part chole ashe ta remove/hidden korar jonno
+overflow use kora hoy*/
+}
+.overlay{
+/*display: none;*/
+position: absolute;
+top: 0;
+right: 0;
+bottom: 0;
+left: 0;
+/*top,right,bottom,left 0 kora je kotha
+height,width 100% kora same kotha*/
+/*height: 100%;
+width: 100%;*/
+background-image: linear-gradient(to bottom, transparent 0%, transparent 18%, rgba(0, 0, 0, 0.8) 99%, rgba(0, 0, 0, 0.8) 100%);
+z-index:99 ;
+}
+.item-content{
+cursor: pointer;
+position: absolute ;
+bottom: 25px;
+left: 32px;
+color: white;
+text-transform: uppercase;
+font-weight: 500;
+font-size: 16px;
+z-index: 999;
+}
+.c-item:hover img {
+transform: scale(1.1);
+transition: 0.3s;
+/*cursor: pointer;*/
+}
+
+/**************************
+* product section design
+***********************/
+
+.product{
+width: 100%;
+padding: 50px 0;
+background-color: #f8f9fa;
+}
+.section-title{
+text-align: center;
+padding-bottom: 50px;
+}
+.line1{
+width: 50px;
+height: 3px;
+background-color: blue;
+margin: 20px auto;
+}
+.section-title h2{
+font-size: 32px;
+font-weight: 500;
+line-height: 1.2;
+color: inherit;
+}
+.owl-carousel .item{
+text-align: center;
+}
+.owl-carousel .item h3{
+color: #7971ea;
+font-weight: 500;
+}
+.owl-carousel .item p{
+line-height: 1.4;
+color: #8c92a0;
+font-weight: 300;
+font-size: 16px;
+}
+/*.owl-dots{
+display: none;
+}*/
+
+/**************************
+* sale section design
+***********************/
+
+.sale{
+width: 100%;
+padding: 100px 0;
+border-bottom: 1px solid #e5e7edad;
+}
+.sale-title{
+text-align: center;
+padding-bottom: 70px;
+}
+.line{
+width: 50px;
+height: 3px;
+background-color: blue;
+margin: 20px auto;
+}
+.sale-title h2{
+font-size: 32px;
+font-weight: 500;
+line-height: 1.2;
+color: inherit;
+}
+.sale-content{
+display: flex;
+}
+.sale-left{
+flex-basis: 50%;
+
+}
+.sale-right{
+flex-basis: 50%;
+text-align: center;
+margin-top: 60px;
+
+}
+.sale-right h2 a {
+font-size: 32px;
+color: #7971ea;
+font-weight: 500;
+line-height: 1.2;
+}
+.sale-right h2 a:hover{
+	color: #5a50e5;
+}
+.sale-right h3{
+line-height: 1.7;
+color: #8c92a0;
+font-weight: 300;
+font-size: 16px;
+padding-bottom: 25px;
+}
+.sale-right h3 a{
+color: #7971ea;
+}
+.sale-right h3 a:hover{
+color: #5a50e5;
+}
+
+.sale-right p{
+line-height: 1.7;
+color: #8c92a0;
+font-weight: 300;
+font-size: 16px;
+}
+.sale-left img{
+max-width: 100%;
+height: auto;
+border-radius: 4px;
+}
+.sale-right button{
+color:white ;
+padding: 14px 24px;
+background-color:#7971ea ;
+border-color:#7971ea;
+border: none;
+letter-spacing: 1px;
+border-radius: 4px;
+font-size: 14px ;
+font-weight: 300;
+transition: 0.5s;
+text-transform: uppercase;
+margin-top: 16px;
+}
+.sale-right button:hover{
+box-shadow: 0 15px 20px -7px rgba(0,0,0,.9);
+background-color: #5a50e5;
+transform: translateY(-4px);
+transition: 0.5s;
+cursor: pointer;
+}
+/**************************
+* footer section design
+***********************/
+
+.footer{
+	width: 100%;
+	margin: 100px 0;
+}
+.footer-content{
+	display: flex;
+}
+.left-part{
+	flex-basis: 50%;
+}
+.left-part{
+	display: flex;
+}
+.first-list, .second-list, .third-list {
+    flex-basis: 33.33%;
+}
+.right-part{
+	
+	flex-basis: 50%;
+}
+.right-part{
+	
+	display: flex;
+}
+.promo, .contact{
+	flex-basis: 50%;
+}
+
+.promo img{
+	width: 260px;
+	height: auto;
+	border-radius: 4px;
+}
+.first-list h2{
+	font-size: 20px;
+    color: #25262a;
+    font-weight: 400;
+    margin-bottom: 18px;
+}
+.first-list li a ,.second-list li a , .third-list li a{
+	color: #5c626e;
+    line-height: 2.2;
+    font-size: 16px;
+    font-weight: 300;
+}
+.second-list ul, .third-list ul{
+	margin-top: 56px;
+}
+.promo h2, .contact h2{
+	font-size: 20px;
+    color: #25262a;
+    font-weight: 400;
+    margin-bottom: 18px;
+}
+.promo a h4 {
+	font-size: 16px;
+	font-weight: 300;
+	margin-top: 15px;
+	color: #7971ea;
+}
+.promo a h4:hover{
+	color: #5a50e5; ;
+}
+.promo a p{
+	color:#8c92a0;
+}
+.location,.phone,.mail{
+	display: flex;
+	margin-bottom: 15px;
+}
+
+/*.location i, .phone i, .mail i{
+	float: left;
+	width: 5%;
+}*/
+.location p, .phone p, .mail p{
+    color: #25262a;
+    line-height: 1.5;
+    font-weight: 300;
+    font-size: 16px;
+
+}
+.l-icon i,.p-icon i,.m-icon i{
+    margin-right: 10px;
+    color: #7971ea;
+    font-size: 18px;
+}
+.s-box p{
+	font-size: 20px;
+    color: #25262a;
+    font-weight: 300;
+    margin-top: 45px; 
+    margin-bottom: 10px;
+
+}
+
+.s-btn input{
+	padding: 12px;
+    font-size: 16px;
+    line-height: 1.5;
+    background-color: white;
+    border: 1px solid #ced4da;
+    border-radius: 6px;
+    padding-right: 64px;
+    /*/padding or width=270px*/
+    padding-top: 14px;
+    padding-bottom: 14px;
+    outline: none;
+
+}
+.s-btn input:focus{
+	border-color: #7971ea;
+
+}
+.s-btn .mail{
+	position: relative;
+}
+
+.s-btn button
+  {
+	position: absolute;
+    background-color: #7971ea;
+    border: 1px solid transparent;
+    padding: 15px 16px;
+    cursor: pointer;
+    transform: translateY(4px);
+    /*margin-top: 4px;*/
+    color: white;
+    border-color: #7971ea;
+    font-size: 12px;
+    font-weight: 300;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    border-radius: 4px;
+    margin-left: 196px;
+   
+}
+.s-btn button:hover{
+box-shadow: 0 5px 20px -7px rgba(0,0,0,.9)!important;
+background-color: #5a50e5;
+/*transform: translateY(-4px);*/
+/*/ top: -2px*/
+/*u can also use margin top: -4px
+but eta use korle ashe pasher element
+gulo movement kore tai transform use
+kora hoy */
+transition: 0.5s;
+
+}
+.end-content{
+    text-align: center;
+    margin-bottom: 100px;
+}
+.end-content p, .end-content i {
+    color: #8c92a0;
+}
+.end-content p span {
+    color: #7971ea;
+    cursor: pointer;
+}
+.end-content p span:hover{
+    color:#5a50e5 ;
+}
+
+
+
+
+
+
+
+/*.all-footer{
+	display: flex;
+}
+.navigations{
+	flex-basis: 50%;
+	display: flex;
+}
+.promo{
+	flex-basis: 25%;
+}
+.contact-info{
+	flex-basis: 25%;
+}
+.navigations h2{
+	font-size: 20px;
+    color: #25262a;
+    font-weight: 500;
+    margin-bottom: 18px;
+}
+.navigations .first-part li a{
+	line-height: 1.9;
+    color: #8c92a0;
+    font-weight: 300;
+    font-size: 16px;
+}
+
+.navigations .second-part{
+	margin-top:52px;
+	margin-left: 65px;
+
+}
+.navigations .second-part li a{
+	line-height: 1.9;
+    color: #8c92a0;
+    font-weight: 300;
+    font-size: 16px;
+}
+.navigations .third-part{
+	margin-top: 52px;
+	margin-left: 65px;
+}
+.navigations .third-part li a{
+	line-height: 1.9;
+    color: #8c92a0;
+    font-weight: 300;
+    font-size: 16px;
+}
+.promo h2{
+	font-size: 20px;
+    color: #25262a;
+    font-weight: 500;
+    margin-bottom: 18px;
+}
+
+.promo li a img{
+	width: 260px;
+	height: auto;
+	border-radius: 4px;
+}
+.promo li a h4{
+	font-size: 18px;
+	font-weight: 300;
+	margin-top: 10px;
+	color: #7971ea;
+}
+.promo li a h4:hover{
+	color: #5a50e5; ;
+}
+.promo li a p{
+	color:#8c92a0;
+}
+.contact-info h2{
+	font-size: 20px;
+    color: #25262a;
+    font-weight: 500;
+    margin-bottom: 18px;
+}
+*/
